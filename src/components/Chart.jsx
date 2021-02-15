@@ -35,8 +35,6 @@ const Chart = ({ articles }) => {
     }
   }
 
-  console.log(data);
-
   return data.length > 0 ? (
     <div className="chart">
       <h2 className="chart__title">Where is your news coming from?</h2>
