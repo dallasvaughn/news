@@ -27,14 +27,7 @@ const App = () => {
 
   const getNews = async () => {
     const res = await axios.get(
-      `https://newsapi.org/v2/everything?q=${searchParam}&pageSize=20`,
-      {
-        headers: {
-          Authorization: process.env.REACT_APP_KEY,
-          'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Headers': 'Authorization',
-        },
-      }
+      `https://newsapi.org/v2/everything?q=${searchParam}&pageSize=20&apiKey=${process.env.REACT_APP_KEY}`
     );
     const { articles } = res.data;
     setArticleList(articles);
