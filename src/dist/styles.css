@@ -165,7 +165,7 @@ svg.recharts-surface tspan {
   .card-list {
     margin-right: 1rem;
     max-height: 80.5vh;
-    overflow: scroll;
+    overflow: auto;
     overflow-x: hidden;
     padding-right: 1rem;
   }

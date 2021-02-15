@@ -5,7 +5,6 @@ import {
   Bar,
   XAxis,
   YAxis,
-  Legend,
   CartesianGrid,
   Tooltip,
   LabelList,
@@ -38,7 +37,7 @@ const Chart = ({ articles }) => {
 
   console.log(data);
 
-  return (
+  return data.length > 0 ? (
     <div className="chart">
       <h2 className="chart__title">Where is your news coming from?</h2>
       <ResponsiveContainer width={700} height="80%">
@@ -68,7 +67,7 @@ const Chart = ({ articles }) => {
         </BarChart>
       </ResponsiveContainer>
     </div>
-  );
+  ) : null;
 };
 
 export default Chart;
