@@ -32,6 +32,7 @@ const App = () => {
         headers: {
           Authorization: process.env.REACT_APP_KEY,
           'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Headers': 'Authorization',
         },
       }
     );
