@@ -1,0 +1,41 @@
+.search {
+  background-color: $lightGrey;
+  border: none;
+  border-radius: 50px;
+  width: 80%;
+  max-width: 36rem;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.2s;
+
+  &:focus {
+    outline: none;
+    width: 85%;
+    max-width: 38rem;
+  }
+}
+
+.button {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.2s;
+
+  &:focus,
+  &:active {
+    outline: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    background-color: $darkGrey;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

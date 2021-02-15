@@ -1,0 +1,32 @@
+.news-card {
+  width: 35rem;
+  background-color: $lightGrey;
+  color: $darkGrey;
+  border-radius: 10px;
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &__image {
+    width: 100%;
+    max-height: 20rem;
+    border-radius: 10px 10px 0 0;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+
+  &__link,
+  &__link:visited {
+    color: #00264d;
+  }
+}
+
+.text {
+  padding: 0 1rem 1rem 1rem;
+}
