@@ -37,7 +37,7 @@ const Chart = ({ articles }) => {
 
   return data.length > 0 ? (
     <div className="chart">
-      <h2 className="chart__title">Where is your news coming from? Test</h2>
+      <h2 className="chart__title">Where is your news coming from?</h2>
       <ResponsiveContainer width={700} height="80%">
         <BarChart
           width={730}

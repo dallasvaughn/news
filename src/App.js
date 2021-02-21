@@ -10,13 +10,16 @@ const App = () => {
   const [searchParam, setSearchParam] = useState('');
   const [articleList, setArticleList] = useState([]);
 
-  axios.defaults.headers.common['X-API-Key'] = process.env.REACT_APP_KEY;
-
   useEffect(() => {
     if (searchParam.length > 0) {
       const getNews = async () => {
         const res = await axios.get(
-          `https://newsapi.org/v2/everything?q=${searchParam}&pageSize=20`
+          `https://newsapi.org/v2/everything?q=${searchParam}&pageSize=20`,
+          {
+            headers: {
+              Authorization: process.env.REACT_APP_KEY,
+            },
+          }
         );
         const { articles } = res.data;
         setArticleList(articles);
