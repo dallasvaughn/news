@@ -4,4 +4,6 @@ When you search for news, this app will show 20 news article results for the sea
 
 # Screenshots
 
-![Desktop](./images/NewsDesktop.png?raw=true)
+![Desktop screenshot](./images/NewsDesktop.png?raw=true 'Desktop')
+
+![Mobile screenshot](./images/NewsMobile.png?raw=true 'Mobile')
